@@ -7,6 +7,11 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Barre de progression -->
+  <div id="progressBarContainer">
+    <div id="progressBar"></div>
+  </div>
+
   <!-- Section d'accueil -->
   <div id="accueil">
     <h1>Bienvenue sur le Quiz !</h1>
@@ -28,18 +33,6 @@
     <button onclick="window.location.reload()">Rejouer</button>
   </div>
 
-  <!-- Scripts -->
-  <script>
-    // Script pour gérer le démarrage du quiz
-    const btnCommencer = document.getElementById("btnCommencer");
-    const accueil = document.getElementById("accueil");
-    const quiz = document.getElementById("quiz");
-
-    btnCommencer.addEventListener("click", () => {
-      accueil.style.display = "none";
-      quiz.style.display = "block";
-    });
-  </script>
   <script src="script.js"></script>
 </body>
 </html>
