@@ -1,12 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 30px;
-  }
-  
-  button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-  
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+#accueil, #quiz, #resultat {
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid #00f0ff;
+  box-shadow: 0 0 20px #00f0ff, 0 0 40px #ff00ff;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 600px;
+  text-align: center;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+  color: #00f0ff;
+  text-shadow: 0 0 5px #ff00ff;
+}
+
+button {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #ff00ff;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 15px 30px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ff00ff, 0 0 20px #00f0ff;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #ff33ff;
+}
+
+#reponses {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#reponses button {
+  background-color: #302b63;
+  border: 2px solid #00f0ff;
+  color: #00f0ff;
+  box-shadow: 0 0 10px #00f0ff;
+}
+
+#reponses button:hover {
+  background-color: #00f0ff;
+  color: #000;
+}
